@@ -1,0 +1,83 @@
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="800dp"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+     >
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:orientation="vertical" 
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             />
+
+        <com.example.mainpro.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true" 
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+	<RelativeLayout
+	    android:layout_weight="0.55"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    >
+
+		<RatingBar
+		    android:id="@+id/ratingBar1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="24dp" />
+		<RatingBar
+		    android:id="@+id/ratingBar2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ratingBar1"
+		    android:layout_marginTop="24dp" />
+		<RatingBar
+		    android:id="@+id/ratingBar3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ratingBar2"
+		    android:layout_marginTop="24dp" />
+		<RatingBar
+		    android:id="@+id/ratingBar4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ratingBar3"
+		    android:layout_marginTop="24dp" />
+		<RatingBar
+		    android:id="@+id/ratingBar5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/ratingBar4"
+		    android:layout_marginTop="24dp" />
+	    
+	</RelativeLayout>
+     
+</LinearLayout>
+</ScrollView>
