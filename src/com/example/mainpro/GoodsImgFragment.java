@@ -26,9 +26,14 @@ public class GoodsImgFragment extends Fragment{
 				false);
 		int i = getArguments().getInt("no");// ªÒ»°ID÷µ
 		String[] img_list = getArguments().getStringArray("info");
-		SmartImageView img_goods = (SmartImageView)rootView.findViewById(R.id.img_hot_goods);
+		SmartImageView img_hot_goods_right = (SmartImageView)rootView.findViewById(R.id.img_hot_goods_right);
+		SmartImageView img_hot_goods_center = (SmartImageView)rootView.findViewById(R.id.img_hot_goods_center);
+		SmartImageView img_hot_goods_left = (SmartImageView)rootView.findViewById(R.id.img_hot_goods_left);
 		System.out.println(img_list[i]);
-		img_goods.setImageUrl(img_list[i]);
+		System.out.println(i);
+		img_hot_goods_right.setImageUrl(img_list[i]);
+		img_hot_goods_center.setImageUrl(img_list[i]);
+		img_hot_goods_left.setImageUrl(img_list[i+1]);
 		return rootView;
 	}
 }

@@ -358,9 +358,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vpi__tab_unselected_pressed_holo=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f07000d;
+        public static final int action_settings=0x7f07000f;
         public static final int bottom=0x7f070003;
-        public static final int img_hot_goods=0x7f07000c;
+        public static final int img_hot_goods_center=0x7f07000d;
+        public static final int img_hot_goods_left=0x7f07000e;
+        public static final int img_hot_goods_right=0x7f07000c;
         public static final int indicator=0x7f070006;
         public static final int none=0x7f070000;
         public static final int pager=0x7f070005;

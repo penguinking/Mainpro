@@ -22,7 +22,7 @@ public class MainActivity extends FragmentActivity {
         mIndicator = (UnderlinePageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
         mIndicator.setFades(false);
-        
+        mIndicator.setCurrentItem(0);
 	}
 
 	@Override

@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    >
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
 
     <com.loopj.android.image.SmartImageView
-        android:id="@+id/img_hot_goods"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY" >
-        
+        android:id="@+id/img_hot_goods_right"
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_launcher" >
+
     </com.loopj.android.image.SmartImageView>
 
-</FrameLayout>
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/img_hot_goods_center"
+        android:layout_weight="0.6"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_launcher"
+        >
+    </com.loopj.android.image.SmartImageView>
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/img_hot_goods_left"
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_launcher"
+        >
+    </com.loopj.android.image.SmartImageView>
+
+</LinearLayout>
