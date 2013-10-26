@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
 
     <com.loopj.android.image.SmartImageView
         android:id="@+id/img_hot_goods_right"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="32dp"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_launcher" >
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:padding="32dp"  
+         >
 
     </com.loopj.android.image.SmartImageView>
 
     <com.loopj.android.image.SmartImageView
         android:id="@+id/img_hot_goods_center"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+
+        
         >
     </com.loopj.android.image.SmartImageView>
 
     <com.loopj.android.image.SmartImageView
         android:id="@+id/img_hot_goods_left"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="32dp"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_launcher"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent"
+        android:padding="32dp"     
         >
     </com.loopj.android.image.SmartImageView>
 
-</RelativeLayout>
+</LinearLayout>
